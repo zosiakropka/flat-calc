@@ -1,0 +1,172 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+input {
+  float: left;
+  border: none;
+}
+@media screen and (orientation:portrait) and (min-height: 400px) {
+  input {
+    font-size: 15px;
+  }
+}
+@media screen and (orientation:portrait) and (min-height: 600px) {
+  input {
+    font-size: 20px;
+  }
+}
+@media screen and (orientation:portrait) and (min-height: 1024px) {
+  input {
+    font-size: 30px;
+  }
+}
+@media screen and (orientation:landscape) and (min-height: 400px) {
+  input {
+    font-size: 20px;
+  }
+}
+@media screen and (orientation:landscape) and (min-height: 600px) {
+  input {
+    font-size: 40px;
+  }
+}
+
+input[type="button"] {
+  margin: 7px;
+}
+
+/* Layout */
+#main-container {
+  height: 100%;
+}
+#result-container input[type="text"] {
+  width: 90%;
+  height: 100%;
+  padding: 0 5%;
+}
+#numbers-container input[type="button"] {
+  width: calc(33.33333% - 14px);
+}
+#numbers-container input[type="button"] {
+  width: calc(33.33333% - 14px);
+  height: calc(25% - 14px);
+}
+#numbers-container input[type="button"]#number-0 {
+  width: calc(66.66667% - 14px);
+}
+
+@media screen and (orientation:portrait) {
+  #result-container {
+    height: 14.2857%;
+  }
+  #advanced-container {
+    height: 28.5714%;
+  }
+  #basic-container,
+  #numbers-container {
+    height: 57.142857143%
+  }
+  #basic-container {
+    width: 25%;
+    float: right;
+  }
+  #numbers-container {
+    width: 75%;
+  }
+  #advanced-container input[type="button"].summarize,
+  #advanced-container input[type="button"].strip-last,
+  #advanced-container input[type="button"].advanced {
+    height: calc(50% - 14px);
+  }
+  #advanced-container input[type="button"].summarize{
+    width: calc(50% - 14px);
+    float: right;
+  }
+  #advanced-container input[type="button"] {
+    width: calc(25% - 14px);
+    height: calc(50% - 14px);
+  }
+  #basic-container input[type="button"] {
+    width: calc(100% - 14px);
+    height: calc(25% - 14px);
+  }
+}
+@media screen and (orientation:landscape) {
+
+  input[type="button"] {
+    height: calc(25% - 14px);
+  }
+  
+  #basic-container input[type="button"] {
+    width: calc(100% - 14px);
+  }
+  #advanced-container input[type="button"]#strip-last,
+  #advanced-container input[type="button"]#clear,
+  #advanced-container input[type="button"].advanced {
+    width: calc(50% - 14px);
+  }
+
+  #advanced-container input[type="button"].summarize{
+    width: calc(100% - 14px);
+  }
+  
+  #result-container {
+    height: 20%;
+  }
+  #numbers-container,
+  #basic-container,
+  #advanced-container {
+    height: 80%;
+  }
+  #numbers-container {
+    float: left;
+  }
+  #basic-container {
+    float: right;
+  }
+  #advanced-container {
+    float: right;
+  }
+  #numbers-container {
+    width: 50%;
+  }
+  #basic-container {
+    width: 16.6666666%;
+  }
+  #advanced-container {
+    width: 33.3333333%;
+  }
+
+}
+
+input#display {
+  background-color: #D2E4E1;
+  color: #545454;
+}
+
+input[type="button"] {
+  color: #FFF;
+}
+/* Colors */
+input#summarize {
+  background-color: #FF4455;
+}
+input.number {
+  background-color: #50A0B4;
+}
+input.advanced {
+  background-color: #F8C647;
+}
+input#strip-last,
+input#clear {
+  background-color: #DF644C;
+}
+input.basic {
+  background-color: #42AA80;
+}
+input#delimiter {
+  background-color: #83C9C6;
+}
